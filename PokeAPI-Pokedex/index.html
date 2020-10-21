@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar fixed sticky-top navbar-expand-lg navbar-dark da-dark" id="navbar">
+        <a class="navbar-brand navbar-text" href="#">Pokédex </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               
+                <!-- Search -->
+                <!-- Regions -->
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fad fa-map-marked"></i> Regions
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" onclick="completeDex()" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">All</a>
+                        <a class="dropdown-item" href="#" onclick="kantoDex()" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Kanto</a>
+                        <a class="dropdown-item" href="#" onclick="jhotoDex()" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Jhoto</a>
+                        <a class="dropdown-item" href="#" onclick="hoennDex()" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Hoenn</a>
+                        <a class="dropdown-item" href="#" onclick="sinnohDex()" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Sinnoh</a>
+                        <a class="dropdown-item" href="#" onclick="unovaDex()" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Unova</a>
+                        <a class="dropdown-item" href="#" onclick="kalosDex()" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Kalos</a>
+                        <a class="dropdown-item" href="#" onclick="alolaDex()" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Alola</a>
+                        </div>
+                      </div>
+                    
+
+                </li>
+           
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Pokedex view -->
+    <div id="poke_container">
+        <ul id="pokedex"></ul>
+        <ul id="pokemon-entry"></ul>
+    </div>
+    <!--  -->
+    
+
+    <!-- Floating button -->
+    <!-- Floating button -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
